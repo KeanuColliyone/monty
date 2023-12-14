@@ -36,7 +36,7 @@ void handle_push(FILE *file, stack_t **stack, unsigned int line_number)
 
 void execute_opcodes(FILE *file, stack_t **stack)
 {
-	char opcode[10];
+	char opcode[100];
 	unsigned int line_number = 1;
 
 	while (fscanf(file, "%s", opcode) == 1)
